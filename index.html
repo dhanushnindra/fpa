@@ -14,10 +14,10 @@
             <a href="#">CONTACT</a>
             <a href="#">EXTRA</a>
         </div>
-        <img src="#">
+        <img id="giff" src="#">
     </nav> 
     <script>
-  const img = document.querySelector('img');
+  const img = document.getElementById('giff');
   fetch('https://api.giphy.com/v1/gifs/translate?api_key=AxwMro45JbNV0iBGj9prktFE2u3mY3XI&s=cats', {mode: 'cors'})
     .then(function(response) {
       return response.json();
